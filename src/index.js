@@ -288,7 +288,8 @@ const reduxifyService = (app, route, name = route, options = {}) => {
                 }
                 return item;
               })
-            })
+            }),
+            data: action.payload.data
           };
         } },
 
